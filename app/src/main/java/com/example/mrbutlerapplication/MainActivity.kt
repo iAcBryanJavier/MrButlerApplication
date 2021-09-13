@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var dbRef: DatabaseReference
     private lateinit var name : EditText
     private lateinit var addBtn: Button
+    private lateinit var addBtn1: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
