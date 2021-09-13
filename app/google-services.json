@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "360450731400",
+    "project_id": "mrbutlerapplication",
+    "storage_bucket": "mrbutlerapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360450731400:android:3f9d8d9be296c2cbbc5e3d",
+        "android_client_info": {
+          "package_name": "com.example.mrbutlerapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "360450731400-npu4bmshte9s4kir76b1q6r7h7cvhuju.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDT5iiO34KA3rzjuEAcg_Ks7pPIJWZnzC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "360450731400-npu4bmshte9s4kir76b1q6r7h7cvhuju.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
