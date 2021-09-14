@@ -23,8 +23,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var dbRef: DatabaseReference
     private lateinit var name : EditText
     private lateinit var addBtn: Button
-    private lateinit var addBtn1: Button
-    private lateinit var addBtn2: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,8 +31,7 @@ class MainActivity : AppCompatActivity() {
         db = FirebaseDatabase.getInstance("https://mrbutlerapplication-default-rtdb.firebaseio.com/")
         dbRef = db.getReference("message")
 
-        name = findViewById(R.id.editNameTxt)
-        addBtn = findViewById(R.id.addRecordBtn)
+
 
         addBtn.setOnClickListener(){
             doAdd()
