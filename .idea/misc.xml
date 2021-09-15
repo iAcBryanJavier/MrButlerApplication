@@ -4,11 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Acer/Documents/Android Studio/MrButlerApplication/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/RJJ/documents/androidstudio/MrButlerApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.39427083333333335" />
+        <entry key="..\:/Users/RJJ/documents/androidstudio/MrButlerApplication/app/src/main/res/layout/activity_main.xml" value="0.378125" />
+        <entry key="..\:/Users/RJJ/documents/androidstudio/MrButlerApplication/app/src/main/res/layout/activity_main2.xml" value="0.378125" />
         <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
         <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/drawable/circle_login_btn.xml" value="0.19427083333333334" />
         <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
         <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/layout/activity_main2.xml" value="0.2" />
+        <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/layout/activity_main2.xml" value="0.25" />
         <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/layout/roundcorner.xml" value="0.13858695652173914" />
       </map>
     </option>
