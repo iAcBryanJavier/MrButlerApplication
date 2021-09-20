@@ -31,9 +31,6 @@ class MainActivity : AppCompatActivity() {
         db = FirebaseDatabase.getInstance("https://mrbutlerapplication-default-rtdb.firebaseio.com/")
         dbRef = db.getReference("message")
 
-        //tite
-
-
 
         addBtn.setOnClickListener(){
             doAdd()
