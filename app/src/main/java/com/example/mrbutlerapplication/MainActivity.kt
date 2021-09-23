@@ -1,49 +1,48 @@
 package com.example.mrbutlerapplication
 
 import android.content.Intent
+import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.renderscript.Sampler
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.DatabaseError
-
-import com.google.firebase.database.DataSnapshot
-
-import com.google.firebase.database.ValueEventListener
-
-
-
+import android.widget.*
+import com.example.mrbutlerapplication.authentication.LoginPage
 class MainActivity : AppCompatActivity() {
+
+    //initialize control variables
+    private lateinit var username1: TextView
+    private lateinit var username2: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var et_user_name = findViewById(R.id.et_user_name) as EditText
-        var et_password = findViewById(R.id.et_password) as EditText
-        var btn_reset = findViewById(R.id.btn_reset) as Button
-        var btn_submit = findViewById(R.id.btn_submit) as Button
-        btn_reset.setOnClickListener {
-
-            et_user_name.setText("")
-            et_password.setText("")
-        }
-        btn_submit.setOnClickListener {
-            val user_name = et_user_name.text;
-            val password = et_password.text;
-            Toast.makeText(this@MainActivity, user_name, Toast.LENGTH_LONG).show()
-
-            val intent = Intent(this, Activity2::class.java)
-            startActivity(intent)
-        }
+        //set control variables
+        username1 = findViewById(R.id.username_1)
+        username2 = findViewById(R.id.username_2)
 
     }
+
+    fun login(view: View){
+        //displays the view id (for testing purposes only)
+
+        Toast.makeText( this,"View ID: ${view.resources.getResourceEntryName(view.id)}", Toast.LENGTH_SHORT).show()
+        when{
+            view.resources.getResourceEntryName(view.id) == "loginBtn1" -> switchActivity(username1.text.toString(), username1.hint.toString())
+            view.resources.getResourceEntryName(view.id) == "loginBtn2" -> switchActivity(username2.text.toString(), username2.hint.toString())
+        }
+    }
+
+    private fun switchActivity(username: String, email: String){
+        var intent = Intent(this@MainActivity, LoginPage::class.java).apply {
+            putExtra("USERNAME", username)
+            putExtra("EMAIL", email)
+        }
+        startActivity(intent)
+    }
+
+
+
 }
 
 

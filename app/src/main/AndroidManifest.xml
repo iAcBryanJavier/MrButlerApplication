@@ -10,16 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MrButlerApplication">
         <activity
-            android:name=".Activity2"
+            android:name=".authentication.RegisterPage"
+            android:exported="true" />
+        <activity
+            android:name=".authentication.LoginPage"
             android:exported="true" />
 
         <meta-data
             android:name="com.google.android.actions"
             android:resource="@xml/roundcorner" />
 
-        <activity
-            android:name=".MainActivity2"
-            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

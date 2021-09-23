@@ -3,16 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Acer/Documents/Android Studio/MrButlerApplication/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
-        <entry key="..\:/Users/Acer/Documents/Android Studio/MrButlerApplication/app/src/main/res/drawable/circle_login_btn.xml" value="0.3828125" />
-        <entry key="..\:/Users/Acer/Documents/Android Studio/MrButlerApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
-        <entry key="..\:/Users/Acer/Documents/Android Studio/MrButlerApplication/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/Acer/Documents/Android Studio/MrButlerApplication/app/src/main/res/layout/activity_main2.xml" value="0.33" />
-        <entry key="..\:/Users/Acer/Documents/Android Studio/MrButlerApplication/app/src/main/res/layout/circle.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/layout/activity_2.xml" value="0.2" />
-        <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/layout/activity_main2.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/xml/roundcorner.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Acer/Documents/Android Studio/MrButlerApplication/app/src/main/res/layout/activity_2.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Acer/Documents/Android Studio/MrButlerApplication/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Acer/Documents/Android Studio/MrButlerApplication/app/src/main/res/layout/activity_register_page.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/Acer/Documents/Android Studio/MrButlerApplication/app/src/main/res/layout/authentication/activity_register_page.xml" value="0.36231884057971014" />
+        <entry key="..\:/Users/Acer/Documents/Android Studio/MrButlerApplication/app/src/main/res/layout/authentication/login_page.xml" value="0.21739130434782608" />
+        <entry key="..\:/Users/Acer/Documents/Android Studio/MrButlerApplication/app/src/main/res/layout/copyof_homescreen_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Acer/Documents/Android Studio/MrButlerApplication/app/src/main/res/layout/homescreen_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Acer/Documents/Android Studio/MrButlerApplication/app/src/main/res/layout/login_page.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Acer/Documents/Android Studio/MrButlerApplication/app/src/main/res/layout/test.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

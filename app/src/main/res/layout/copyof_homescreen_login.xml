@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
-    tools:context=".Activity2">
+    tools:context=".authentication.LoginPage">
 
 
     <ImageButton
@@ -69,7 +69,7 @@
         android:textSize="34sp" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/username_1"
         android:layout_width="101dp"
         android:layout_height="51dp"
         android:layout_alignParentEnd="true"
@@ -81,7 +81,7 @@
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/username_2"
         android:layout_width="101dp"
         android:layout_height="51dp"
         android:layout_alignParentEnd="true"
