@@ -11,7 +11,7 @@
     <LinearLayout
         android:id="@+id/ll_main_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="25dp">
@@ -20,6 +20,7 @@
             android:id="@+id/loginUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
             android:padding="30dp"
             android:text="Login"
             android:textColor="@color/black"
@@ -67,13 +68,24 @@
             app:layout_constraintVertical_bias="0.462"
             tools:layout_editor_absoluteX="0dp" />
 
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/ll_main_layout">
+
         <Button
             android:id="@+id/btn_submit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
             android:onClick="submitCredentials"
             android:text="Submit"
+            android:layout_margin="25dp"
             android:textAllCaps="false"
+            android:layout_weight="1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.746"
@@ -83,17 +95,20 @@
 
         <Button
             android:id="@+id/btn_reset"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
             android:onClick="resetFields"
             android:text="Reset"
+            android:layout_margin="25dp"
             android:textAllCaps="false"
+            android:layout_weight="1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.321"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.6" />
+
 
     </LinearLayout>
 
