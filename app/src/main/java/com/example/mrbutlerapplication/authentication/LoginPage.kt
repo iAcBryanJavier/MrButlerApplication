@@ -8,6 +8,8 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.mrbutlerapplication.R
+import com.google.android.gms.tasks.OnSuccessListener
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
@@ -15,11 +17,15 @@ import com.google.firebase.ktx.Firebase
 class LoginPage : AppCompatActivity() {
 
     //initialize control variables
-    private lateinit var loginUser: TextView
+    private lateinit var userLogin: TextView
+    private lateinit var etEmail: EditText
     private lateinit var etPassword: EditText
     private lateinit var btnSubmit: Button
     private lateinit var btnReset: Button
-    private lateinit var emailHint: EditText
+
+    private var username: String? = null
+    private var email: String? = null
+    private lateinit var auth: FirebaseAuth
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,23 +36,25 @@ class LoginPage : AppCompatActivity() {
         val database = Firebase.database
         val userRef = database.getReference("Employees")
 
+        //authentication
+        auth = FirebaseAuth.getInstance()
+
         //get data from MainActivity.kt
-        val username: String? = intent.getStringExtra("USERNAME")
-        val email: String? = intent.getStringExtra("EMAIL")
+        username = intent.getStringExtra("USERNAME")
+        email = intent.getStringExtra("EMAIL")
 
         //set control variables by id
-        loginUser = findViewById(R.id.loginUser)
+        userLogin = findViewById(R.id.loginUser)
+        etEmail = findViewById(R.id.et_email)
         etPassword = findViewById(R.id.et_password)
         btnSubmit = findViewById(R.id.btn_submit)
         btnReset = findViewById(R.id.btn_reset)
-        emailHint = findViewById(R.id.et_email)
 
         //set login username textview
-        loginUser.text = username
+        userLogin.text = username
 
-        //set default email of user
-        emailHint.hint = email
-
+        //set email field
+        etEmail.setText(email)
 
         //access register page
         btnSubmit.setOnLongClickListener {
@@ -57,12 +65,30 @@ class LoginPage : AppCompatActivity() {
 
     }
 
-    fun submitCredentials(view: View){
+    private fun loginUser(email: String, password: String){
+        auth.signInWithEmailAndPassword(email, password).addOnSuccessListener {
+            Toast.makeText(this@LoginPage, "Login Successful!", Toast.LENGTH_SHORT).show()
+        }.addOnFailureListener {
+            Toast.makeText(this@LoginPage, "Login Failed! Check Credentials.", Toast.LENGTH_SHORT).show()
+        }
 
     }
 
-    fun resetFields(view: View){
-        etPassword.setText("")
+
+    fun submitCredentials(view: View?){
+        var txtEmail: String = etEmail.text.toString()
+        var txtPassword: String = etPassword.text.toString()
+
+
+        if(txtEmail == "" || txtPassword == ""){
+            Toast.makeText(this@LoginPage, "Missing Credentials!", Toast.LENGTH_SHORT).show()
+        }else{
+            loginUser(txtEmail, txtPassword)
+        }
+    }
+
+    fun resetFields(view: View?){
+        Toast.makeText(this@LoginPage, "Please Contact Administrator To Reset Password!", Toast.LENGTH_SHORT).show()
     }
 
 
