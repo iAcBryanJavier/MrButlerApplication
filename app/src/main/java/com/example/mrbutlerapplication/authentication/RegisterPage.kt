@@ -1,5 +1,6 @@
 package com.example.mrbutlerapplication.authentication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
@@ -36,7 +37,7 @@ class RegisterPage : AppCompatActivity() {
 
     }
 
-    fun register(view: View){
+    fun register(view: View?){
         var toast: Toast
         if(fullName.text.toString() == "" || phoneNum.text.toString() == "" || email.text.toString() == "" || password.text.toString() == ""){
 
@@ -56,13 +57,17 @@ class RegisterPage : AppCompatActivity() {
 
     private fun registerUser(name: String, phone: String, email: String, password: String){
         var toast: Toast
+        var intent: Intent = Intent(this@RegisterPage, LoginPage::class.java)
+        intent.putExtra("USERNAME", "Welcome ${name} to Mr. Butler!")
+        intent.putExtra("EMAIL", email)
 
         authentication.createUserWithEmailAndPassword(email,password).addOnCompleteListener(this@RegisterPage, object: OnCompleteListener<AuthResult>{
             override fun onComplete(p0: Task<AuthResult>) {
                 if(p0.isSuccessful){
+                    startActivity(intent)
                     Toast.makeText(this@RegisterPage, "User Registered Successfully!",Toast.LENGTH_SHORT).show()
                 }else{
-                    Toast.makeText(this@RegisterPage, "Error Occurred! Try Again Later.", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@RegisterPage, "Error Occurred! Try Again.", Toast.LENGTH_SHORT).show()
                 }
             }
 
