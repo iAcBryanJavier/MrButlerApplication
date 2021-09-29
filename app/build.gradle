@@ -50,4 +50,8 @@ dependencies {
 
     //Dependency for circular Imageview
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //Cardview Library
+
+    implementation 'androidx.cardview:cardview:1.0.0'
 }
