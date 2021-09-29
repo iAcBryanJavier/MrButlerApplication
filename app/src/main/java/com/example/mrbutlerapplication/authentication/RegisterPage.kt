@@ -1,24 +1,22 @@
 package com.example.mrbutlerapplication.authentication
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Gravity
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.Toast
+import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
 import com.example.mrbutlerapplication.R
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.gms.tasks.Task
+import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
 
 class RegisterPage : AppCompatActivity() {
 
-    private lateinit var fullName: EditText
-    private lateinit var phoneNum: EditText
-    private lateinit var email: EditText
-    private lateinit var password: EditText
+    private lateinit var fullName: TextInputEditText
+    private lateinit var phoneNum: TextInputEditText
+    private lateinit var email:    TextInputEditText
+    private lateinit var password: TextInputEditText
 
     private lateinit var authentication: FirebaseAuth
 
@@ -34,14 +32,18 @@ class RegisterPage : AppCompatActivity() {
         authentication = FirebaseAuth.getInstance()
 
 
+
+
     }
 
     fun register(view: View){
         var toast: Toast
+
+
         if(fullName.text.toString() == "" || phoneNum.text.toString() == "" || email.text.toString() == "" || password.text.toString() == ""){
 
             //make this toast text align center
-            toast = Toast.makeText(this,"There are some missing credentials! Please Try Again", Toast.LENGTH_SHORT)
+            toast = Toast.makeText(this,"There are some missing credentials in the form!", Toast.LENGTH_SHORT)
             toast.show()
         }else if(password.text.toString().length < 6){
 
