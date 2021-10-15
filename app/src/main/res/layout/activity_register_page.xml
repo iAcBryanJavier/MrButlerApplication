@@ -98,6 +98,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/password"
+                    android:inputType="textPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edittext_border"/>
@@ -108,8 +109,8 @@
                 android:layout_width="380dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="27dp"
-                android:layout_marginBottom="37dp"
-                android:hint="Number"
+                android:layout_marginBottom="22dp"
+                android:hint="Contact Number"
                 app:counterEnabled="true"
                 app:counterMaxLength="10"
                 app:helperText="Enter 9 digit mobile number"
@@ -124,10 +125,60 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/phoneNum"
+                    android:inputType="number"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edittext_border"
                     android:maxLength="10" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout5"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:layout_marginBottom="22dp"
+                android:hint="Age"
+                app:helperText="Required*"
+                app:helperTextTextColor="@color/red"
+                app:layout_constraintBottom_toTopOf="@+id/submitBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
+                app:prefixTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/age"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_border"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout6"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:layout_marginBottom="37dp"
+                android:hint="Address"
+                app:helperText="Required*"
+                app:helperTextTextColor="@color/red"
+                app:layout_constraintBottom_toTopOf="@+id/submitBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout5"
+                app:prefixTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_border"
+                    />
             </com.google.android.material.textfield.TextInputLayout>
 
 
