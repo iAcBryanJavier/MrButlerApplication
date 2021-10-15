@@ -10,6 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MrButlerApplication">
         <activity
+            android:name=".SplashPage"
+            android:exported="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".controller.MenuPage"
+            android:exported="true" />
+        <activity
             android:name=".authentication.RegisterPage"
             android:exported="true" />
         <activity
@@ -23,11 +36,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

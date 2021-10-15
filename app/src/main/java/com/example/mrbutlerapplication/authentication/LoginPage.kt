@@ -11,6 +11,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.example.mrbutlerapplication.R
+import com.example.mrbutlerapplication.controller.MenuPage
 import com.google.android.gms.tasks.OnSuccessListener
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
@@ -69,8 +70,10 @@ class LoginPage : AppCompatActivity() {
     }
 
     private fun loginUser(email: String, password: String){
+        var intent: Intent = Intent(this@LoginPage,MenuPage::class.java)
         auth.signInWithEmailAndPassword(email, password).addOnSuccessListener {
             Toast.makeText(this@LoginPage, "Login Successful!", Toast.LENGTH_SHORT).show()
+            startActivity(intent)
         }.addOnFailureListener {
             Toast.makeText(this@LoginPage, "Login Failed! Check Credentials.", Toast.LENGTH_SHORT).show()
         }

@@ -8,6 +8,8 @@ import android.view.View
 import android.widget.*
 import com.example.mrbutlerapplication.authentication.EmailAdds
 import com.example.mrbutlerapplication.authentication.LoginPage
+import com.example.mrbutlerapplication.SplashPage
+
 class MainActivity : AppCompatActivity() {
 
     //initialize control variables
