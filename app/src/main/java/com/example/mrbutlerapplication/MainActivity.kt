@@ -1,14 +1,12 @@
 package com.example.mrbutlerapplication
 
 import android.content.Intent
-import android.media.Image
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
 import com.example.mrbutlerapplication.authentication.EmailAdds
 import com.example.mrbutlerapplication.authentication.LoginPage
-import com.example.mrbutlerapplication.SplashPage
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
     fun login(view: View){
         //initializes Email Address class to access employee email addresses
-        var user: EmailAdds = EmailAdds()
+        var user = EmailAdds()
 
         //displays the view id (for testing purposes only)
         Toast.makeText( this,"View ID: ${view.resources.getResourceEntryName(view.id)}", Toast.LENGTH_SHORT).show()

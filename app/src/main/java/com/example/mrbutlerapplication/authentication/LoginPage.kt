@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.mrbutlerapplication.R
 import com.example.mrbutlerapplication.controller.MenuPage
@@ -59,7 +60,7 @@ class LoginPage : AppCompatActivity() {
 
         //access register page
         btnSubmit.setOnLongClickListener {
-            var intent = Intent(this@LoginPage, RegisterPage::class.java)
+            val intent = Intent(this@LoginPage, RegisterPage::class.java)
             startActivity(intent)
             true
         }

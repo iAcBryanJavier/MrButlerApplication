@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.EditText
 import android.widget.Toast
 import com.example.mrbutlerapplication.R
 import com.google.android.gms.tasks.OnCompleteListener
@@ -12,7 +11,6 @@ import com.google.android.gms.tasks.Task
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
@@ -37,24 +35,15 @@ class RegisterPage : AppCompatActivity() {
         authentication = FirebaseAuth.getInstance()
 
 
+
+
     }
 
-    fun register(view: View?){
-        var toast: Toast
-        if(fullName.text.toString() == "" || phoneNum.text.toString() == "" || email.text.toString() == "" || password.text.toString() == ""){
-
-
-        }else if(password.text.toString().length < 6){
-
-
-        }else{
-            registerUser(fullName.text.toString(), phoneNum.text.toString(), email.text.toString(), password.text.toString())
-        }
-
+    fun register(view: View?) {
+        registerUser(fullName.text.toString(), phoneNum.text.toString(), email.text.toString(), password.text.toString())
     }
 
     private fun registerUser(name: String, phone: String, email: String, password: String){
-        var toast: Toast
         var intent: Intent = Intent(this@RegisterPage, LoginPage::class.java)
         intent.putExtra("USERNAME", "Welcome ${name} to Mr. Butler!")
         intent.putExtra("EMAIL", email)
