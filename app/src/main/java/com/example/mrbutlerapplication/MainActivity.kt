@@ -1,12 +1,14 @@
 package com.example.mrbutlerapplication
 
 import android.content.Intent
+import android.media.Image
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
-import androidx.appcompat.app.AppCompatActivity
 import com.example.mrbutlerapplication.authentication.EmailAdds
 import com.example.mrbutlerapplication.authentication.LoginPage
+import com.example.mrbutlerapplication.SplashPage
 
 class MainActivity : AppCompatActivity() {
 
