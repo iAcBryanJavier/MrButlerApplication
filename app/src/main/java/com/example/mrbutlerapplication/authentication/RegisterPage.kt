@@ -45,6 +45,8 @@ class RegisterPage : AppCompatActivity() {
         authentication = FirebaseAuth.getInstance()
         database = Firebase.database
 
+        //hello
+
 
     }
 
