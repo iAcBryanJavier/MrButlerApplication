@@ -31,19 +31,22 @@
             android:layout_width="78dp"
             android:layout_height="152dp"
             android:layout_weight="1"
-            android:onClick="login"
             android:background="@null"
+            android:onClick="login"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/man1" />
+            app:srcCompat="@drawable/man1"
+            tools:ignore="SpeakableTextPresentCheck" />
+
         <ImageButton
             android:id="@+id/loginBtn2"
             android:layout_width="78dp"
             android:layout_height="152dp"
             android:layout_weight="1"
-            android:onClick="login"
             android:background="@null"
+            android:onClick="login"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/man2" />
+            app:srcCompat="@drawable/man2"
+            tools:ignore="SpeakableTextPresentCheck" />
 
     </LinearLayout>
 
@@ -89,19 +92,22 @@
             android:layout_width="78dp"
             android:layout_height="152dp"
             android:layout_weight="1"
-            android:onClick="login"
             android:background="@null"
+            android:onClick="login"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/man3" />
+            app:srcCompat="@drawable/man3"
+            tools:ignore="SpeakableTextPresentCheck" />
+
         <ImageView
             android:id="@+id/loginBtn4"
             android:layout_width="78dp"
             android:layout_height="152dp"
             android:layout_weight="1"
-            android:onClick="login"
             android:background="@null"
+            android:onClick="login"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/man1" />
+            app:srcCompat="@drawable/man1"
+            tools:ignore="SpeakableTextPresentCheck" />
 
     </LinearLayout>
 

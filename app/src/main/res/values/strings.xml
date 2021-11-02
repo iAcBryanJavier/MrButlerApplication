@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MrButlerApplication</string>
+    <string name="butler_name">Butler Name</string>
+    <string name="butler_age">Butler age</string>
 </resources>

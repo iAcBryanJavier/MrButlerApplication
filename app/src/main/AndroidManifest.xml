@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MrButlerApplication">
         <activity
+            android:name=".ButlerProfileCard"
+            android:exported="false" />
+            android:name=".controller.profile_page"
+            android:exported="true" />
+        <activity
             android:name=".SplashPage"
-            android:exported="true" >
-
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -35,9 +39,7 @@
 
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
