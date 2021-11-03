@@ -11,6 +11,25 @@
         <entry key="..\:/Users/Acer/Documents/Android Studio/MrButlerApplication/app/src/main/res/layout/activity_register_page.xml" value="0.33" />
         <entry key="..\:/Users/Acer/Documents/Android Studio/MrButlerApplication/app/src/main/res/layout/circle.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Acer/Documents/Android Studio/MrButlerApplication/app/src/main/res/layout/menu_page.xml" value="0.33" />
+        <entry key="..\:/Users/RJJ/documents/androidstudio/MrButlerApplication/app/src/main/res/drawable/close_bg.xml" value="0.36102564102564105" />
+        <entry key="..\:/Users/RJJ/documents/androidstudio/MrButlerApplication/app/src/main/res/drawable/description_selector.xml" value="0.36102564102564105" />
+        <entry key="..\:/Users/RJJ/documents/androidstudio/MrButlerApplication/app/src/main/res/drawable/ic_add.xml" value="0.36102564102564105" />
+        <entry key="..\:/Users/RJJ/documents/androidstudio/MrButlerApplication/app/src/main/res/drawable/ic_description_focused.xml" value="0.36102564102564105" />
+        <entry key="..\:/Users/RJJ/documents/androidstudio/MrButlerApplication/app/src/main/res/drawable/ic_label.xml" value="0.36102564102564105" />
+        <entry key="..\:/Users/RJJ/documents/androidstudio/MrButlerApplication/app/src/main/res/drawable/ic_label_focused.xml" value="0.36102564102564105" />
+        <entry key="..\:/Users/RJJ/documents/androidstudio/MrButlerApplication/app/src/main/res/drawable/ic_money_focused.xml" value="0.36102564102564105" />
+        <entry key="..\:/Users/RJJ/documents/androidstudio/MrButlerApplication/app/src/main/res/drawable/label_selector.xml" value="0.36102564102564105" />
+        <entry key="..\:/Users/RJJ/documents/androidstudio/MrButlerApplication/app/src/main/res/drawable/money_selector.xml" value="0.36102564102564105" />
+        <entry key="..\:/Users/RJJ/documents/androidstudio/MrButlerApplication/app/src/main/res/layout/activity_add_transaction.xml" value="0.25" />
+        <entry key="..\:/Users/RJJ/documents/androidstudio/MrButlerApplication/app/src/main/res/layout/activity_detailed.xml" value="0.25" />
+        <entry key="..\:/Users/RJJ/documents/androidstudio/MrButlerApplication/app/src/main/res/layout/activity_main.xml" value="0.23596014492753623" />
+        <entry key="..\:/Users/RJJ/documents/androidstudio/MrButlerApplication/app/src/main/res/layout/activity_register_page.xml" value="0.20969202898550723" />
+        <entry key="..\:/Users/RJJ/documents/androidstudio/MrButlerApplication/app/src/main/res/layout/activity_salary_page.xml" value="0.25" />
+        <entry key="..\:/Users/RJJ/documents/androidstudio/MrButlerApplication/app/src/main/res/layout/activity_splash_page.xml" value="0.20969202898550723" />
+        <entry key="..\:/Users/RJJ/documents/androidstudio/MrButlerApplication/app/src/main/res/layout/login_page.xml" value="0.20969202898550723" />
+        <entry key="..\:/Users/RJJ/documents/androidstudio/MrButlerApplication/app/src/main/res/layout/menu_page.xml" value="0.20471014492753623" />
+        <entry key="..\:/Users/RJJ/documents/androidstudio/MrButlerApplication/app/src/main/res/layout/salary_page.xml" value="0.22327898550724637" />
+        <entry key="..\:/Users/RJJ/documents/androidstudio/MrButlerApplication/app/src/main/res/layout/transaction_layout.xml" value="0.25" />
         <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/layout/activity_2.xml" value="0.2" />
         <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/layout/activity_main2.xml" value="0.25416666666666665" />

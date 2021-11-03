@@ -10,9 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MrButlerApplication">
         <activity
+            android:name=".DetailedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddTransactionActivity"
+            android:exported="false" />
+        <activity
             android:name=".SplashPage"
-            android:exported="true" >
-
+            android:exported="false" />
+        <activity
+            android:name=".SalaryPage"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -35,9 +43,7 @@
 
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>

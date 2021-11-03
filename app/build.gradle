@@ -1,7 +1,9 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-android-extensions'
     id 'com.google.gms.google-services'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -54,4 +56,14 @@ dependencies {
     //Cardview Library
 
     implementation 'androidx.cardview:cardview:1.0.0'
+
+    //salary page
+    implementation 'com.google.android.material:material:1.4.0-alpha02>'
+
+    def room_version = "2.2.6"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+
+    implementation "androidx.room:room-ktx:$room_version"
 }

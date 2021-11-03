@@ -12,5 +12,23 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+
+        <item name="colorPrimaryDark">@color/design_default_color_primary_dark</item>
+        <item name="colorAccent">@color/teal_200</item>
+        <item name="android:textColor">@color/textSalary</item>
+
+        <item name ="colorControlActivated">@color/butler_color</item>
     </style>
+
+    <style name="FilledBoxColor" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <!-- underline color in FilledBox style, border color in OutlinedBox
+        <item name="boxStrokeColor">@color/text_input_layout_stroke_color</item>
+
+        <! The color of the label when it is collapsed and the text field is active -->
+        <item name="hintTextColor">@color/butler_color</item>
+        <!-- The color of the label in all other text field states (such as resting and disabled) -->
+        <item name="android:textColorHint">@color/butler_color</item>
+    </style>
+
 </resources>

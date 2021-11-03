@@ -14,4 +14,8 @@
     <color name="yellow">#E0F123</color>
     <color name="red">#F44336</color>
 
+    <color name ="textSalary">#292929</color>
+    <color name ="green">#43A047</color>
+
+
 </resources>
