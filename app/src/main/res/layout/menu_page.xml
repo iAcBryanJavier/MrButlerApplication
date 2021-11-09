@@ -42,6 +42,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
+                    android:onClick="accessProfile"
                     android:orientation="vertical">
 
                     <ImageView
@@ -65,6 +66,8 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/chat"
+                android:onClick="accessChat"
                 app.cardCornerRadius="12dp"
                 android:layout_width="170dp"
                 android:layout_height="170dp"
@@ -76,41 +79,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:orientation="vertical">
 
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_marginTop="18dp"
-                        android:src="@drawable/calendar1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:fontFamily="@font/black_italic"
-                        android:text="Calendar"
-                        android:textColor="@color/black"
-                        android:textSize="18dp" />
-
-
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                app.cardCornerRadius="12dp"
-                android:layout_width="170dp"
-                android:layout_height="170dp"
-                android:layout_margin="10dp"
-                app:cardBackgroundColor="@color/card_background"
-                app:cardElevation="5dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
@@ -146,42 +115,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_marginTop="18dp"
-                        android:src="@drawable/contactsupport1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:fontFamily="@font/black_italic"
-                        android:text="Contact\nSupport"
-                        android:textColor="@color/black"
-                        android:textSize="18dp" />
-
-
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                app.cardCornerRadius="12dp"
-                android:layout_width="170dp"
-                android:layout_height="170dp"
-                android:layout_margin="10dp"
-                app:cardBackgroundColor="@color/card_background"
-                app:cardElevation="5dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:onClick="accessBookings">
 
                     <ImageView
                         android:layout_width="50dp"
@@ -216,7 +151,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:onClick="accessSalary">
 
                     <ImageView
                         android:layout_width="50dp"
@@ -249,6 +185,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
+                    android:onClick="logout"
                     android:orientation="vertical">
 
                     <ImageView

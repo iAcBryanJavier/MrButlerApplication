@@ -1,0 +1,34 @@
+package com.example.mrbutlerapplication
+
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentPagerAdapter
+import com.example.mrbutlerapplication.fragments.MessagesFragment
+import com.example.mrbutlerapplication.fragments.UsersFragment
+
+class ChatPageAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
+    override fun getCount(): Int {
+        return 2
+    }
+
+    override fun getItem(position: Int): Fragment {
+        return when(position){
+            0-> UsersFragment()
+            else->{
+                return MessagesFragment()
+            }
+        }
+    }
+
+    override fun getPageTitle(position: Int): CharSequence? {
+        return when(position){
+            0-> {
+                "Users"
+            }
+            else->{
+                return "Messages"
+            }
+        }
+    }
+
+}

@@ -7,6 +7,8 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.example.mrbutlerapplication.authentication.EmailAdds
 import com.example.mrbutlerapplication.authentication.LoginPage
+import com.example.mrbutlerapplication.controller.MenuPage
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,14 +28,17 @@ class MainActivity : AppCompatActivity() {
         username3 = findViewById(R.id.username_3)
         username4 = findViewById(R.id.username_4)
 
+        // checks if a user is currently logged in
+        if (FirebaseAuth.getInstance().uid != null){
+            val intent = Intent(this, MenuPage::class.java)
+            startActivity(intent)
+        }
+
     }
 
     fun login(view: View){
         //initializes Email Address class to access employee email addresses
         var user = EmailAdds()
-
-        //displays the view id (for testing purposes only)
-        Toast.makeText( this,"View ID: ${view.resources.getResourceEntryName(view.id)}", Toast.LENGTH_SHORT).show()
         when{
             view.resources.getResourceEntryName(view.id) == "loginBtn1" -> switchActivity(username1.text.toString(), user.butler1)
             view.resources.getResourceEntryName(view.id) == "loginBtn2" -> switchActivity(username2.text.toString(), user.butler2)

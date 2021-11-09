@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mrbutlerapplication">
 
+    <uses-permission android:name="android.Manifest.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,9 +13,47 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MrButlerApplication">
         <activity
+            android:name=".SalaryPage"
+            android:exported="false"
+            android:label="@string/title_activity_salary_page"
+            android:theme="@style/Theme.MrButlerApplication.NoActionBar" />
+        <activity
+            android:name=".DetailedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddTransactionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BookingsCard"
+            android:exported="false" />
+        <activity
+            android:name=".ButlerProfileCard"
+            android:exported="false" />
+        <activity android:name=".chats.ChatLogActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".chats.LatestMessagesActivity" />
+        </activity>
+        <activity android:name=".chats.NewMessageActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".chats.LatestMessagesActivity" />
+        </activity>
+        <activity
+            android:name=".chats.LatestMessagesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".authentication.LoginPage"
+            android:exported="false" />
+        <activity
+            android:name=".authentication.RegisterPage"
+            android:exported="false" />
+        <activity
+            android:name=".ChatPage"
+            android:exported="false" />
+        <activity
             android:name=".SplashPage"
-            android:exported="true" >
-
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,13 +62,7 @@
         </activity>
         <activity
             android:name=".controller.MenuPage"
-            android:exported="true" />
-        <activity
-            android:name=".authentication.RegisterPage"
-            android:exported="true" />
-        <activity
-            android:name=".authentication.LoginPage"
-            android:exported="true" />
+            android:exported="false" />
 
         <meta-data
             android:name="com.google.android.actions"
@@ -35,9 +70,7 @@
 
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>

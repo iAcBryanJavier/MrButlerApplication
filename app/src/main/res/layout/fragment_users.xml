@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.UsersFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:id="@+id/butler1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/space_cadet"
+                android:padding="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="71dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/man1"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="0.1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Butler 1"
+                    android:textSize="24dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="offline"
+                    android:gravity="right"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <ImageView
+                    android:layout_width="3dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/status_circle_offline"
+                    android:layout_marginTop="42dp"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/butler2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/space_cadet"
+                android:padding="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:layout_below="@id/butler1">
+
+                <ImageView
+                    android:layout_width="71dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/man2"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="0.1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Butler 2"
+                    android:textSize="24dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="offline"
+                    android:gravity="right"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <ImageView
+                    android:layout_width="3dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/status_circle_offline"
+                    android:layout_marginTop="42dp"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/butler3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/space_cadet"
+                android:padding="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:layout_below="@id/butler2">
+
+                <ImageView
+                    android:layout_width="71dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/man3"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="0.1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Butler 3"
+                    android:textSize="24dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="offline"
+                    android:gravity="right"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <ImageView
+                    android:layout_width="3dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/status_circle_offline"
+                    android:layout_marginTop="42dp"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/butler4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/space_cadet"
+                android:padding="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:layout_below="@id/butler3">
+
+                <ImageView
+                    android:layout_width="71dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/man2"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="0.1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Butler 4"
+                    android:textSize="24dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="offline"
+                    android:gravity="right"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <ImageView
+                    android:layout_width="3dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/status_circle_offline"
+                    android:layout_marginTop="42dp"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+</FrameLayout>
