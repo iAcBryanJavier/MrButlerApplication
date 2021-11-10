@@ -3,6 +3,7 @@ package com.example.mrbutlerapplication.model
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.RatingBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mrbutlerapplication.R
@@ -21,6 +22,7 @@ class ProfileAdapter (private val userList : User) : RecyclerView.Adapter<Profil
         Picasso.get().load(userList.profileImageUrl).into(holder.profileImage)
         holder.name.text = userList.username
         holder.email.text = userList.email
+        holder.rating.numStars = userList.rating!!
 
     }
 
@@ -33,7 +35,7 @@ class ProfileAdapter (private val userList : User) : RecyclerView.Adapter<Profil
         val profileImage : CircleImageView = itemView.findViewById(R.id.profile_picture)
         val name : TextView = itemView.findViewById(R.id.butlerName)
         val email  : TextView = itemView.findViewById(R.id.butlerEmail)
-
+        val rating : RatingBar = itemView.findViewById(R.id.rating)
 
     }
 }

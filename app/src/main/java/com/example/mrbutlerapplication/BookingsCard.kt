@@ -1,12 +1,11 @@
 package com.example.mrbutlerapplication
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mrbutlerapplication.model.Bookings
 import com.example.mrbutlerapplication.model.BookingsAdapter
-import com.example.mrbutlerapplication.model.User
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 

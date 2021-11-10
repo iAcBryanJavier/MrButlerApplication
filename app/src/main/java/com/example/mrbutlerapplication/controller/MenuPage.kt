@@ -6,6 +6,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.mrbutlerapplication.*
 import com.example.mrbutlerapplication.chats.LatestMessagesActivity
+import com.example.mrbutlerapplication.model.HistoryCard
 import com.google.firebase.auth.FirebaseAuth
 
 class MenuPage : AppCompatActivity() {
@@ -36,6 +37,11 @@ class MenuPage : AppCompatActivity() {
 
     fun accessSalary(view: View?){
         var intent = Intent(this@MenuPage,SalaryPage::class.java)
+        startActivity(intent)
+    }
+
+    fun accessHistory(view: View?){
+        var intent = Intent(this@MenuPage,HistoryCard::class.java)
         startActivity(intent)
     }
 

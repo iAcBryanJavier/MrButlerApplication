@@ -50,11 +50,22 @@
         <entry key="..\:/Users/Acer/Documents/Android Studio/MrButlerApplication/app/src/main/res/layout/user_row_new_message.xml" value="0.33" />
         <entry key="..\:/Users/Acer/Documents/Android Studio/MrButlerApplication/app/src/main/res/menu/nav_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/layout/activity_2.xml" value="0.2" />
+        <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/layout/activity_bookings_card.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/layout/activity_butler_profile_card.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/layout/activity_history_card.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/layout/activity_history_card2.xml" value="0.1328125" />
+        <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/layout/activity_history_page.xml" value="0.25833333333333336" />
         <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/layout/activity_main2.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/layout/activity_register_page.xml" value="0.264" />
         <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/layout/activity_splash_page.xml" value="0.176" />
+        <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/layout/bookings.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/layout/butler.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/layout/history.xml" value="0.1328125" />
         <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/layout/login_page.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/layout/menu_page.xml" value="0.12563323201621074" />
+        <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/layout/transaction_layout.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/layout/user_row_new_message.xml" value="0.25833333333333336" />
         <entry key="..\:/Users/ivann/Documents/AndoidStudio/MrButlerApplication/app/src/main/res/xml/roundcorner.xml" value="0.25416666666666665" />
       </map>
     </option>
