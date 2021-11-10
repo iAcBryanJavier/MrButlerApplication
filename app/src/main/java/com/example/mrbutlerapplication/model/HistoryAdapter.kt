@@ -7,9 +7,11 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mrbutlerapplication.R
 
-class HistoryAdapter(private val userList : ArrayList<History>): RecyclerView.Adapter<HistoryAdapter.MyViewHolder>() {
+class HistoryAdapter(private val userList:ArrayList<HistoryValues>) : RecyclerView.Adapter<HistoryAdapter.MyViewHolder>() {
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.history,parent,false)
+        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.history,
+            parent,false)
         return MyViewHolder(itemView)
     }
 
@@ -34,4 +36,5 @@ class HistoryAdapter(private val userList : ArrayList<History>): RecyclerView.Ad
         val due : TextView = itemView.findViewById(R.id.due)
         val status : TextView = itemView.findViewById(R.id.status)
     }
+
 }

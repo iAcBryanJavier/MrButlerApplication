@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MrButlerApplication">
         <activity
-            android:name=".model.HistoryCard"
+            android:name=".model.HistoryActivity"
             android:exported="false"
             android:label="@string/title_activity_salary_page"
             android:theme="@style/Theme.MrButlerApplication.NoActionBar" />
